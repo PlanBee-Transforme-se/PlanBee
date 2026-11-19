@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlanBee: organize eventos, tarefas e orçamento em um só lugar.">
+  <title>PlanBee | Planejamento</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <!-- Estrutura inicial: as funcionalidades serão desenvolvidas com JavaScript. -->
+  <aside class="sidebar" aria-label="Menu principal">
+    <a class="logo" href="../index.html">🐝 PlanBee</a>
+    <nav aria-label="Navegação">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="eventos.html">Meus Eventos</a></li>
+        <li><a href="planejamento.html" aria-current="page">Planejamento</a></li>
+        <li><a href="orcamento.html">Orçamento</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="app">
+    <header class="topbar">
+      <span>PlanBee • Planejamento de eventos</span>
+    </header>
+
+    <main id="conteudo-principal">
+      <h1>Planejamento</h1>
+      <section aria-labelledby="evento-selecionado">
+        <h2 id="evento-selecionado">Evento selecionado</h2>
+        <p>Selecione um evento para visualizar o planejamento.</p>
+      </section>
+
+      <section aria-labelledby="quadro-tarefas">
+        <h2 id="quadro-tarefas">Tarefas e responsáveis</h2>
+        <button type="button" disabled>+ Nova tarefa (em desenvolvimento)</button>
+        <div id="lista-de-tarefas">
+          <p>As tarefas, os responsáveis e os status aparecerão aqui.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>PlanBee — Projeto 23 | PROA</p>
+    </footer>
+  </div>
+</body>
+</html>
