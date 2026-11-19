@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PlanBee: organize eventos, tarefas e orçamento em um só lugar.">
+  <title>PlanBee | Meus Eventos</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/main.js" defer></script>
+</head>
+<body>
+  <!-- Estrutura inicial: as funcionalidades serão desenvolvidas com JavaScript. -->
+  <aside class="sidebar" aria-label="Menu principal">
+    <a class="logo" href="../index.html">🐝 PlanBee</a>
+    <nav aria-label="Navegação">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="eventos.html" aria-current="page">Meus Eventos</a></li>
+        <li><a href="planejamento.html">Planejamento</a></li>
+        <li><a href="orcamento.html">Orçamento</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <div class="app">
+    <header class="topbar">
+      <span>PlanBee • Planejamento de eventos</span>
+    </header>
+
+    <main id="conteudo-principal">
+      <h1>Meus Eventos</h1>
+      <section aria-labelledby="eventos-descricao">
+        <h2 id="eventos-descricao">Seus eventos</h2>
+        <p>Cadastre e acompanhe eventos estudantis e comunitários.</p>
+        <button type="button" disabled>+ Novo evento (em desenvolvimento)</button>
+      </section>
+
+      <section aria-labelledby="lista-eventos">
+        <h2 id="lista-eventos">Lista de eventos</h2>
+        <div id="lista-de-eventos">
+          <p>Os eventos cadastrados aparecerão aqui.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>PlanBee — Projeto 23 | PROA</p>
+    </footer>
+  </div>
+</body>
+</html>
