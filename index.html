@@ -6,55 +6,38 @@
   <meta name="description" content="PlanBee: organize eventos, tarefas e orçamento em um só lugar.">
   <title>PlanBee | Início</title>
   <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/themes.css">
+  <link rel="stylesheet" href="css/modals.css">
   <link rel="stylesheet" href="css/home.css">
   <script src="js/main.js" defer></script>
+  <script src="js/modals.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/planos.js" defer></script>
 </head>
 <body>
-  <!-- Estrutura inicial: as funcionalidades serão desenvolvidas com JavaScript. -->
-  <aside class="sidebar" aria-label="Menu principal">
+  <!-- Home deslogada: estrutura inicial para desenvolver conforme o Figma. -->
+  <header>
     <a class="logo" href="index.html">🐝 PlanBee</a>
     <nav aria-label="Navegação">
-      <ul>
-        <li><a href="index.html" aria-current="page">Início</a></li>
-        <li><a href="pages/eventos.html">Meus Eventos</a></li>
-        <li><a href="pages/planejamento.html">Planejamento</a></li>
-        <li><a href="pages/orcamento.html">Orçamento</a></li>
-      </ul>
+      <a href="index.html" aria-current="page">Início</a>
+      <button type="button" disabled>Planos</button>
+      <a href="#sobre">Sobre</a>
+      <button type="button" disabled>Entrar</button>
+      <button type="button" disabled>Criar conta</button>
     </nav>
-  </aside>
-
-  <div class="app">
-    <header class="topbar">
-      <span>PlanBee • Planejamento de eventos</span>
-    </header>
-
-    <main id="conteudo-principal">
-      <h1>Início</h1>
-      <section aria-labelledby="boas-vindas">
-        <h2 id="boas-vindas">Bem-vindo ao PlanBee!</h2>
-        <p>Organize seus eventos, tarefas e orçamento com facilidade.</p>
-        <a href="pages/eventos.html">Ver meus eventos</a>
-      </section>
-
-      <section aria-labelledby="visao-geral">
-        <h2 id="visao-geral">Visão geral</h2>
-        <p>Em breve: total de eventos e tarefas pendentes.</p>
-      </section>
-
-      <section aria-labelledby="resumo-orcamento">
-        <h2 id="resumo-orcamento">Resumo do orçamento</h2>
-        <p>Os valores dos eventos aparecerão aqui.</p>
-      </section>
-
-      <section aria-labelledby="proximas-tarefas">
-        <h2 id="proximas-tarefas">Próximas tarefas</h2>
-        <p>As próximas atividades dos eventos aparecerão aqui.</p>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>PlanBee — Projeto 23 | PROA</p>
-    </footer>
-  </div>
+  </header>
+  <main id="conteudo-principal">
+    <h1>Planeje eventos com facilidade e organização</h1>
+    <p>Organize, planeje e controle todos os detalhes dos seus eventos.</p>
+    <button type="button" disabled>Começar agora</button>
+    <section id="sobre" aria-labelledby="titulo-sobre">
+      <h2 id="titulo-sobre">Sobre o PlanBee</h2>
+      <!-- Conteúdo e recursos da página pública. -->
+    </section>
+    <!-- Modais de login, cadastro e planos serão desenvolvidos aqui. -->
+  </main>
+  <footer class="footer">
+    <p>PlanBee — Projeto 23 | PROA</p>
+  </footer>
 </body>
 </html>
