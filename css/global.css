@@ -160,6 +160,13 @@ img {
     transition: background-color 0.2s;
 }
 
+.nav-link svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+    flex-shrink: 0;
+}
+
 .nav-link:hover,
 .nav-link[aria-current="page"] {
     background-color: var(--cor-primaria);
