@@ -1,66 +1,144 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PlanBee: organize eventos, tarefas e orçamento em um só lugar.">
-  <title>PlanBee | Início</title>
-  <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/themes.css">
-  <link rel="stylesheet" href="../css/modals.css">
-  <link rel="stylesheet" href="../css/dashboard.css">
-  <script src="../js/main.js" defer></script>
-  <script src="../js/modals.js" defer></script>
-  <script src="../js/dashboard.js" defer></script>
-</head>
-<body>
-  <!-- Estrutura inicial: as funcionalidades serão desenvolvidas com JavaScript. -->
-  <aside class="sidebar" aria-label="Menu principal">
-    <a class="logo" href="dashboard.html">🐝 PlanBee</a>
-    <nav aria-label="Navegação">
-      <ul>
-        <li><a href="dashboard.html" aria-current="page">Início</a></li>
-        <li><a href="eventos.html">Meus Eventos</a></li>
-        <li><a href="planejamento.html">Planejamento</a></li>
-        <li><a href="orcamento.html">Orçamento</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="configuracoes.html">Configurações</a></li>
-      </ul>
-    </nav>
-  </aside>
+    <meta charset="UTF-8">
 
-  <div class="app">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>PlanBee | Início</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/themes.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/modals.js" defer></script>
+    <script src="../js/dashboard.js" defer></script>
+</head>
+
+<body class="app-layout">
+
+    <!-- Menu lateral -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="../assets/images/Logo PlanBee 1.svg" alt="logo-PlanBee">
+        </div>
+
+        <nav aria-label="Menu principal">
+            <ul>
+                <li>
+                    <a class="nav-link" href="dashboard.html"
+                       aria-current="page">
+                       <i data-lucide="house"></i>
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="eventos.html">
+                      <i data-lucide="calendar-days"></i>
+                      Eventos
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="planejamento.html">
+                      <i data-lucide="layers"></i>
+                        Planejamento
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="orcamento.html">
+                      <i data-lucide="circle-dollar-sign"></i>
+                        Orçamento
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="sidebar-bottom" aria-label="Menu secundário">
+            <ul>
+                <li>
+                    <a class="nav-link" href="sobre.html">
+                        Sobre
+                    </a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="configuracoes.html">
+                        Configurações
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-mascote">
+          <img src="../assets/images/Abelha Mascote de Eventos Académicos 1.png"
+           alt="Mascote do PlanBee">
+        </div>
+    </aside>
+
+    <!-- Cabeçalho -->
+
     <header class="topbar">
-      <span>PlanBee • Planejamento de eventos</span>
+
+        <div class="breadcrumb">
+            <strong>Início</strong>
+            <span>/</span>
+            <span>Painel geral</span>
+        </div>
+
+        <div class="search-box">
+            <input type="search"
+                   aria-label="Buscar evento ou tarefa"
+                   placeholder="Buscar evento, tarefa...">
+        </div>
+
+        <div class="profile-area">
+
+            <button class="notification-button"
+                    type="button"
+                    aria-label="Notificações">
+                🔔
+            </button>
+
+            <div class="avatar" aria-hidden="true"></div>
+
+            <span>Usuário</span>
+
+        </div>
+
     </header>
 
-    <main id="conteudo-principal">
-      <h1>Início</h1>
-      <section aria-labelledby="boas-vindas">
-        <h2 id="boas-vindas">Bem-vindo ao PlanBee!</h2>
-        <p>Organize seus eventos, tarefas e orçamento com facilidade.</p>
-        <a href="eventos.html">Ver meus eventos</a>
-      </section>
+    <!-- Conteúdo específico da página -->
 
-      <section aria-labelledby="visao-geral">
-        <h2 id="visao-geral">Visão geral</h2>
-        <p>Em breve: total de eventos e tarefas pendentes.</p>
-      </section>
+    <main class="main-content" id="conteudo-principal">
 
-      <section aria-labelledby="resumo-orcamento">
-        <h2 id="resumo-orcamento">Resumo do orçamento</h2>
-        <p>Os valores dos eventos aparecerão aqui.</p>
-      </section>
+        <h1>Olá, Mariana!</h1>
 
-      <section aria-labelledby="proximas-tarefas">
-        <h2 id="proximas-tarefas">Próximas tarefas</h2>
-        <p>As próximas atividades dos eventos aparecerão aqui.</p>
-      </section>
+        <p>O conteúdo do dashboard será desenvolvido aqui.</p>
+
     </main>
 
+    <!-- Rodapé -->
+
     <footer class="footer">
-      <p>PlanBee — Projeto 23 | PROA</p>
+
+        <p>PlanBee • Planejamento de Eventos</p>
+
+        <div class="footer-links">
+            <span>Ajuda</span>
+            <span>Feedback</span>
+            <span>Termos</span>
+            <span>Privacidade</span>
+        </div>
+
     </footer>
-  </div>
+
 </body>
 </html>
