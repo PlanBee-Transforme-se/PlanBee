@@ -1,49 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PlanBee: organize eventos, tarefas e orçamento em um só lugar.">
-  <title>PlanBee | Configurações</title>
-  <link rel="stylesheet" href="../css/global.css">
-  <link rel="stylesheet" href="../css/themes.css">
-  <link rel="stylesheet" href="../css/modals.css">
-  <link rel="stylesheet" href="../css/configuracoes.css">
-  <script src="../js/main.js" defer></script>
-  <script src="../js/modals.js" defer></script>
-  <script src="../js/configuracoes.js" defer></script>
-  <script src="../js/planos.js" defer></script>
-</head>
-<body>
-  <!-- Estrutura inicial: as funcionalidades serão desenvolvidas com JavaScript. -->
-  <aside class="sidebar" aria-label="Menu principal">
-    <a class="logo" href="dashboard.html">🐝 PlanBee</a>
-    <nav aria-label="Navegação">
-      <ul>
-        <li><a href="dashboard.html">Início</a></li>
-        <li><a href="eventos.html">Meus Eventos</a></li>
-        <li><a href="planejamento.html">Planejamento</a></li>
-        <li><a href="orcamento.html">Orçamento</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="configuracoes.html" aria-current="page">Configurações</a></li>
-      </ul>
-    </nav>
-  </aside>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="PlanBee: organize eventos, tarefas e orçamento em um só lugar."
+    />
+    <title>PlanBee | Configurações</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/themes.css" />
+    <link rel="stylesheet" href="../css/modals.css" />
+    <link rel="stylesheet" href="../css/configuracoes.css" />
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="../js/main.js" defer></script>
+    <script src="../js/modals.js" defer></script>
+    <script src="../js/configuracoes.js" defer></script>
+    <script src="../js/planos.js" defer></script>
+  </head>
+  <body class="app-layout">
+    <!-- Menu lateral -->
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar"></aside>
 
-  <div class="app">
-    <header class="topbar">
-      <span>PlanBee • Planejamento de eventos</span>
-    </header>
+      <div class="app-main">
+        <!-- Cabeçalho -->
+        <header class="topbar" id="header"></header>
 
-    <main id="conteudo-principal">
-      <h1>Configurações</h1>
-      <!-- Personalização, planos, segurança, notificações e privacidade. -->
-      <!-- Preferências e fluxos demonstrativos, somente no navegador. -->
-    </main>
+        <!-- Conteúdo específico da página -->
+        <main class="main-content" id="conteudo-principal">
+          <h1>Configurações</h1>
+          <!-- Personalização, planos, segurança, notificações e privacidade. -->
+          <!-- Preferências e fluxos demonstrativos, somente no navegador. -->
+        </main>
+      </div>
+    </div>
 
-    <footer class="footer">
-      <p>PlanBee — Projeto 23 | PROA</p>
-    </footer>
-  </div>
-</body>
+    <!-- Rodapé -->
+    <footer class="footer" id="footer"></footer>
+  </body>
 </html>

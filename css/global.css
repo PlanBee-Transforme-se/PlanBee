@@ -1,1 +1,489 @@
 /* Estilos do PlanBee */
+:root {
+    --cor-primaria: #ffc329;
+    --cor-secundaria: #111c32;
+    --cor-creme: #fff4dc;
+    --cor-branca: #ffffff;
+    --cor-texto: #111827;
+    --cor-texto-claro: #d9dee7;
+    --cor-menu: #3b4961;
+    --cor-borda: #43516a;
+
+    --fundo-global: linear-gradient(180deg, #c4d5f8, #ffebb3);
+
+    --fonte-principal: Arial, sans-serif;
+    --largura-sidebar: 240px;
+    --altura-header: 72px;
+    --altura-footer: 48px;
+    --espacamento: 16px;
+    --raio-borda: 16px;
+    --sombra: 0 5px 8px #00000026;
+}
+
+/* Reset CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    background: var(--fundo-global);
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Estrutura global */
+
+/* Estrutura global */
+
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: var(--espacamento);
+    padding: var(--espacamento);
+}
+
+.app-shell {
+    display: flex;
+    flex: 1;
+    gap: var(--espacamento);
+}
+
+.sidebar {
+    width: var(--largura-sidebar);
+    flex-shrink: 0;
+}
+
+.app-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 0;
+    gap: var(--espacamento);
+}
+
+.topbar {
+    min-height: var(--altura-header);
+}
+
+.main-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer {
+    min-height: var(--altura-footer);
+}
+
+/* Menu lateral */
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 16px;
+
+    background: linear-gradient(180deg,
+            #ffda77 0px,
+            var(--cor-secundaria) 160px);
+
+    color: var(--cor-branca);
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra);
+}
+
+.logo {
+    text-align: center;
+    padding: 12px 0;
+    min-height: 130px;
+}
+
+.logo h2 {
+    font-size: 34px;
+    color: var(--cor-secundaria);
+}
+
+.logo span {
+    color: var(--cor-primaria);
+}
+
+.logo p {
+    font-size: 12px;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.sidebar nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    padding: 14px 16px;
+    border-radius: 8px;
+
+    background-color: var(--cor-menu);
+    color: var(--cor-texto-claro);
+
+    transition: background-color 0.2s;
+}
+
+.nav-link svg {
+    width: 20px;
+    height: 20px;
+    stroke-width: 2;
+    flex-shrink: 0;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+.sidebar-bottom .nav-link {
+    background-color: transparent;
+    border: 1px solid var(--cor-borda);
+}
+
+.sidebar-bottom .nav-link:hover,
+.sidebar-bottom .nav-link[aria-current="page"] {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.sidebar-mascote {
+    border-radius: 16px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-mascote img {
+    width: 100%;
+    max-width: 180px;
+}
+
+/* Cabeçalho */
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+
+    padding: 12px 24px;
+
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra);
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.breadcrumb svg {
+    width: 20px;
+    height: 20px;
+    color: var(--cor-primaria);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    width: 100%;
+    max-width: 350px;
+
+    background-color: var(--cor-branca);
+    border-radius: 10px;
+    color: var(--cor-texto);
+}
+
+.search-box input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    min-width: 0;
+}
+
+.search-box svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.keyboard-shortcut {
+    font-size: 11px;
+    white-space: nowrap;
+    padding: 4px 6px;
+    background-color: #e9edf3;
+    border-radius: 4px;
+    color: #64748b;
+}
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.notification-button {
+    background: none;
+    border: none;
+    color: var(--cor-primaria);
+    font-size: 22px;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    border: none;
+    color: var(--cor-branca);
+    border-left: 1px solid var(--cor-borda);
+    padding-left: 16px;
+}
+
+.profile-button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.avatar svg {
+    width: 22px;
+    height: 22px;
+    stroke-width: 2;
+}
+
+/* Rodapé */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    padding: 12px 24px;
+
+    background: linear-gradient(
+        90deg,
+        var(--cor-primaria),
+        var(--cor-secundaria) 9%
+    );
+
+    color: var(--cor-branca);
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra);
+    font-size: 13px;
+}
+
+.footer p {
+    font-weight: 500;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-links button {
+    background: transparent;
+    border: none;
+    color: var(--cor-texto-claro);
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.footer-links button:hover {
+    color: var(--cor-primaria);
+}
+
+.footer-links button:focus-visible {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 4px;
+}
+
+/* Componentes reutilizáveis */
+
+.btn-primary {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-weight: bold;
+}
+
+.btn-secondary {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-branca);
+}
+
+.card {
+    padding: 20px;
+    background-color: var(--cor-branca);
+    border-radius: var(--raio-borda);
+    box-shadow: var(--sombra);
+}
+
+/* Responsividade inicial */
+
+@media (max-width: 900px) {
+    :root {
+        --largura-sidebar: 190px;
+    }
+
+    .breadcrumb span {
+        display: none;
+    }
+
+    .topbar {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 650px) {
+    .app-shell {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .sidebar nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        min-height: auto;
+    }
+
+    .topbar,
+    .footer {
+        flex-wrap: wrap;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* Responsividade — Notebook */
+
+@media (min-width: 901px) and (max-width: 1440px) {
+    :root {
+        --largura-sidebar: 220px;
+        --altura-header: 64px;
+        --altura-footer: 44px;
+        --espacamento: 12px;
+    }
+
+    .topbar {
+        padding: 12px 16px;
+    }
+
+    .search-box {
+        max-width: 280px;
+    }
+}
+
+/* Telas com altura reduzida */
+
+@media (min-width: 901px) and (max-height: 800px) {
+    .sidebar {
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .logo {
+        min-height: auto;
+        padding: 4px 0;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .sidebar nav ul {
+        gap: 8px;
+    }
+
+    .nav-link {
+        padding: 10px 12px;
+    }
+
+    .sidebar-mascote img {
+        max-width: 120px;
+    }
+}
