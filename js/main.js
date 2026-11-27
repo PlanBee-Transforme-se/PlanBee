@@ -145,6 +145,18 @@ links.forEach((link) => {
     }
 });
 
+// Atualização do cabeçalho
+
+const paginaAtual = document.querySelector("#pagina-atual");
+
+const linkAtivo = document.querySelector(
+    '.sidebar .nav-link[aria-current="page"]'
+);
+
+if (paginaAtual && linkAtivo) {
+    paginaAtual.textContent = linkAtivo.textContent.trim();
+}
+
 // Inicialização dos ícones
 
 if (typeof lucide !== "undefined") {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,38 +10,36 @@
   <link rel="stylesheet" href="../css/themes.css">
   <link rel="stylesheet" href="../css/modals.css">
   <link rel="stylesheet" href="../css/sobre.css">
+  <script src="https://unpkg.com/lucide@latest" defer></script>
   <script src="../js/main.js" defer></script>
   <script src="../js/modals.js" defer></script>
 </head>
-<body>
-  <!-- Estrutura inicial: as funcionalidades serão desenvolvidas com JavaScript. -->
-  <aside class="sidebar" aria-label="Menu principal">
-    <a class="logo" href="dashboard.html">🐝 PlanBee</a>
-    <nav aria-label="Navegação">
-      <ul>
-        <li><a href="dashboard.html">Início</a></li>
-        <li><a href="eventos.html">Meus Eventos</a></li>
-        <li><a href="planejamento.html">Planejamento</a></li>
-        <li><a href="orcamento.html">Orçamento</a></li>
-        <li><a href="sobre.html" aria-current="page">Sobre</a></li>
-        <li><a href="configuracoes.html">Configurações</a></li>
-      </ul>
-    </nav>
-  </aside>
 
-  <div class="app">
-    <header class="topbar">
-      <span>PlanBee • Planejamento de eventos</span>
-    </header>
+<body class="app-layout">
 
-    <main id="conteudo-principal">
-      <h1>Sobre</h1>
-      <!-- Apresentação do PlanBee e da equipe conforme o Figma. -->
-    </main>
+  <!-- Menu lateral -->
+  <div class="app-shell">
 
-    <footer class="footer">
-      <p>PlanBee — Projeto 23 | PROA</p>
-    </footer>
+    <aside class="sidebar" id="sidebar"></aside>
+
+    <div class="app-main">
+
+      <!-- Cabeçalho -->
+      <header class="topbar" id="header"></header>
+
+      <!-- Conteúdo específico da página -->
+      <main class="main-content" id="conteudo-principal">
+        <h1>Sobre</h1>
+        <!-- Apresentação do PlanBee e da equipe conforme o Figma. -->
+      </main>
+
+    </div>
+
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="footer" id="footer"></footer>
   </div>
 </body>
+
 </html>
