@@ -1,144 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>PlanBee | Início</title>
+	<title>PlanBee | Início</title>
 
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/themes.css">
-    <link rel="stylesheet" href="../css/modals.css">
-    <link rel="stylesheet" href="../css/dashboard.css">
+	<link rel="stylesheet" href="../css/global.css">
+	<link rel="stylesheet" href="../css/themes.css">
+	<link rel="stylesheet" href="../css/modals.css">
+	<link rel="stylesheet" href="../css/dashboard.css">
 
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    <script src="../js/main.js" defer></script>
-    <script src="../js/modals.js" defer></script>
-    <script src="../js/dashboard.js" defer></script>
+	<script src="https://unpkg.com/lucide@latest" defer></script>
+	<script src="../js/main.js" defer></script>
+	<script src="../js/modals.js" defer></script>
+	<script src="../js/dashboard.js" defer></script>
 </head>
 
 <body class="app-layout">
 
-    <!-- Menu lateral -->
+	<!-- Menu lateral -->
 
-    <aside class="sidebar">
+	<div class="app-shell">
 
-        <div class="logo">
-            <img src="../assets/images/Logo PlanBee 1.svg" alt="logo-PlanBee">
-        </div>
+		<aside class="sidebar" id="sidebar"></aside>
 
-        <nav aria-label="Menu principal">
-            <ul>
-                <li>
-                    <a class="nav-link" href="dashboard.html"
-                       aria-current="page">
-                       <i data-lucide="house"></i>
-                        Início
-                    </a>
-                </li>
+		<div class="app-main">
 
-                <li>
-                    <a class="nav-link" href="eventos.html">
-                      <i data-lucide="calendar-days"></i>
-                      Eventos
-                    </a>
-                </li>
+			<!-- Cabeçalho -->
 
-                <li>
-                    <a class="nav-link" href="planejamento.html">
-                      <i data-lucide="layers"></i>
-                        Planejamento
-                    </a>
-                </li>
+			<header class="topbar" id="header"></header>
 
-                <li>
-                    <a class="nav-link" href="orcamento.html">
-                      <i data-lucide="circle-dollar-sign"></i>
-                        Orçamento
-                    </a>
-                </li>
-            </ul>
-        </nav>
 
-        <nav class="sidebar-bottom" aria-label="Menu secundário">
-            <ul>
-                <li>
-                    <a class="nav-link" href="sobre.html">
-                        Sobre
-                    </a>
-                </li>
+			<!-- Conteúdo específico da página -->
 
-                <li>
-                    <a class="nav-link" href="configuracoes.html">
-                        Configurações
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <div class="sidebar-mascote">
-          <img src="../assets/images/Abelha Mascote de Eventos Académicos 1.png"
-           alt="Mascote do PlanBee">
-        </div>
-    </aside>
+			<main class="main-content" id="conteudo-principal">
 
-    <!-- Cabeçalho -->
+				<h1>Olá, Mariana!</h1>
 
-    <header class="topbar">
+				<p>O conteúdo do dashboard será desenvolvido aqui.</p>
 
-        <div class="breadcrumb">
-            <strong>Início</strong>
-            <span>/</span>
-            <span>Painel geral</span>
-        </div>
+			</main>
 
-        <div class="search-box">
-            <input type="search"
-                   aria-label="Buscar evento ou tarefa"
-                   placeholder="Buscar evento, tarefa...">
-        </div>
+		</div>
 
-        <div class="profile-area">
+	</div>
+	<!-- Rodapé -->
 
-            <button class="notification-button"
-                    type="button"
-                    aria-label="Notificações">
-                🔔
-            </button>
-
-            <div class="avatar" aria-hidden="true"></div>
-
-            <span>Usuário</span>
-
-        </div>
-
-    </header>
-
-    <!-- Conteúdo específico da página -->
-
-    <main class="main-content" id="conteudo-principal">
-
-        <h1>Olá, Mariana!</h1>
-
-        <p>O conteúdo do dashboard será desenvolvido aqui.</p>
-
-    </main>
-
-    <!-- Rodapé -->
-
-    <footer class="footer">
-
-        <p>PlanBee • Planejamento de Eventos</p>
-
-        <div class="footer-links">
-            <span>Ajuda</span>
-            <span>Feedback</span>
-            <span>Termos</span>
-            <span>Privacidade</span>
-        </div>
-
-    </footer>
+	<footer class="footer" id="footer"></footer>
 
 </body>
+
 </html>
